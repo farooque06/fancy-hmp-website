@@ -1,0 +1,30 @@
+// colors...
+
+// $primary-color:#164a41;
+$primary-color: rgb(29, 55, 56);
+
+$Secondary-color: #4d774e;
+
+$mix-gradient1: linear-gradient(
+  to right,
+  rgba(91, 14, 216, 0.767),
+  rgba(238, 12, 200, 0.747)
+);
+$mix-gradient2: linear-gradient(
+  to right,
+  rgba(76, 255, 11, 0.767),
+  rgba(239, 161, 45, 0.747)
+);
+
+$background-linear: linear-gradient(115deg, #164a41, #4d774e, #9dc88d);
+
+$bg-layer: rgba(5, 22, 34, 0.5);
+// $header-bg: linear-gradient(#001320 0%, #05162252 60%, #05162200 100%);
+$header-bg: linear-gradient(#1d3738 5%, #0e352d52 70%, #00182900 100%);
+$color1: rgb(157, 200, 141);
+$color2: #efc88d;
+$color3: rgba(238, 12, 200);
+$color4: rgba(91, 14, 216);
+
+$type-brown:#2b2a2a;
+$white: #ffffff;

@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/commonPd", "./styles/variables","./styles/overlapping";
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+p{
+    line-height: 1.3;
+}
+
+.common-title {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 5px;
+  margin: auto;
+  .head1 {
+    font-size: 30px;
+    color: rgba(91, 14, 216, 0.767);
+    position: relative;
+  }
+  .sub-head{
+    font-size: 18px;
+    font-weight: normal;
+    color:  rgba(238, 12, 200, 0.747);
+    padding-bottom: 15px;
+    line-height: 1.5;
+  }
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -5px;
+    background-image: linear-gradient(
+      to right,
+      rgba(91, 14, 216, 0.767),
+      rgba(238, 12, 200, 0.747)
+    );
+  }
+  &.type2{
+    .head1 {
+        color: $color2;
+    }
+    &::after{
+        background-image: linear-gradient(
+            to right,
+            rgba(91, 201, 51, 0.767),
+            rgba(239, 200, 141, 0.747)
+          );
+    }
+    .sub-head{
+        color: $color1;
+    }
+  }
+}
+
+
+ul,li{
+  margin: 0;
+  padding: 0;
+}

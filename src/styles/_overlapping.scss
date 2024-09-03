@@ -1,0 +1,23 @@
+
+//for slider
+// Left/right controls for nav
+//
+
+.carousel-control-prev,
+.carousel-control-next {
+  left: 15% !important;
+  top: 100% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  width: 80px !important;
+}
+
+.carousel-control-prev {
+  left: 10% !important;
+  right: 10% !important;
+}
+.carousel-indicators {
+  max-width: 300px !important;
+  margin-left: auto !important;
+  margin-right: 40% !important;
+}

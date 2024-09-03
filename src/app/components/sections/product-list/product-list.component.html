@@ -1,0 +1,119 @@
+<!-- <div class="product-list-container common-padding common-top-bottom-pd">
+
+    <div class="item-container">
+        <div class="title">
+            <h2>Clothes</h2>
+            <div class="link"><a href>see more</a></div>
+        </div>
+        <div class="items">
+            <div class="item" *ngFor="let item of clothes | slice:0:3">
+                <div class="image">
+                    <img *ngIf="item.image"
+                        [src]="'../../../../assets/images/clothes/'+item.image"
+                        alt>
+                    <img *ngIf="!item.image"
+                        src="../../../../assets/icons/clothes-rack (2).png" alt>
+                </div>
+                <div class="content">
+                    <h5 class="name">{{item.name}}</h5>
+                    <p class="price">Rs.{{item.price}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="item-container">
+        <div class="title">
+            <h2>Bags</h2>
+            <div class="link"><a href>see more</a></div>
+        </div>
+        <div class="items">
+            <div class="item" *ngFor="let item of bags | slice:0:3">
+                <div class="image">
+                    <img *ngIf="item.image"
+                        [src]="'../../../../assets/images/bags/'+item.image"
+                        alt>
+                    <img *ngIf="!item.image"
+                        src="../../../../assets/icons/clothes-rack (2).png" alt>
+                </div>
+                <div class="content">
+                    <h5 class="name">{{item.name}}</h5>
+                    <p class="price">Rs.{{item.price}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="item-container">
+        <div class="title">
+            <h2>Shoes</h2>
+            <div class="link"><a href>see more</a></div>
+        </div>
+        <div class="items">
+            <div class="item" *ngFor="let item of shoes | slice:0:3">
+                <div class="image">
+                    <img *ngIf="item.image"
+                        [src]="'../../../../assets/images/shoes/'+item.image"
+                        alt>
+                    <img *ngIf="!item.image"
+                        src="../../../../assets/icons/clothes-rack (2).png" alt>
+                </div>
+                <div class="content">
+                    <h5 class="name">{{item.name}}</h5>
+                    <p class="price">Rs.{{item.price}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="item-container">
+        <div class="title">
+            <h2>Accessories</h2>
+            <div class="link"><a href>see more</a></div>
+        </div>
+        <div class="items">
+            <div class="item" *ngFor="let item of accessories | slice:0:3">
+                <div class="image">
+                    <img *ngIf="item.image"
+                        [src]="'../../../../assets/images/accessories/'+item.image"
+                        alt>
+                    <img *ngIf="!item.image"
+                        src="../../../../assets/icons/clothes-rack (2).png" alt>
+                </div>
+                <div class="content">
+                    <h5 class="name">{{item.name}}</h5>
+                    <p class="price">Rs.{{item.price}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> -->
+
+<div class="product-list-container common-padding common-top-bottom-pd">
+    <div class="item-container" *ngFor="let category of categories">
+      <div class="title">
+        <h2>{{category.name}}</h2>
+        <div class="link"><a href="#">see more</a></div>
+      </div>
+      <div class="items">
+        <div class="item" *ngFor="let item of category.items | slice:0:3">
+          <div class="image">
+            <img *ngIf="item.image"
+                 [src]="'../../../../assets/images/' + category.name.toLowerCase() + '/' + item.image"
+                 alt>
+            <img *ngIf="!item.image"
+                 src="../../../../assets/icons/clothes-rack (2).png" alt>
+          </div>
+          <div class="content">
+            <h5 class="name">{{item.name}}</h5>
+            <p class="price">Rs.{{item.price}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,28 @@
+<div class="new-arrival-section">
+    <div class="arrival-container common-padding common-top-bottom-pd">
+        <div class="common-title type2 ">
+            <h2 class="head1">Our Products</h2>
+            <h5 class="sub-head">Discover our range of stylish and sustainable hemp products:</h5>
+        </div>
+
+        <div class="arrival-product-slider">
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let item of newArrival">
+                    <div class="main-container" >
+                        <div class="content">
+                            <h2 class="title">{{item.title}}</h2>
+                            <div class="cnt">
+                                <p class="p">{{item.p1}}</p>
+                                <p class="p">{{item.p2}}</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img [src]="'../../../../assets/images/new-arrival/' + item.image" alt="">
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <app-product-list></app-product-list>
+</div>

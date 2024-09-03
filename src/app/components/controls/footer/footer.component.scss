@@ -1,0 +1,52 @@
+@import '../../../../styles/variables';
+.footer-section{
+    background-color: $primary-color;
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .form{
+            position: relative;
+            width: 50%;
+            padding: 100px;
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                content: "";
+                width: 1px;
+                height: 100%;
+                background: $mix-gradient2;
+              }
+
+              .ttl-c{
+                margin-bottom: 40px;
+              }
+            
+        }
+        .details{
+            padding: 100px;
+            width: 50%;
+            .ttl{
+                color: $color2;
+            }
+            .has-top-mg{
+                margin-top: 50px;
+            }
+            
+            
+                a{
+                    color: $color1;
+                    text-decoration: none;
+                }
+            
+
+            .copy{
+                color:#a3a3a3;
+                margin-top: 60px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

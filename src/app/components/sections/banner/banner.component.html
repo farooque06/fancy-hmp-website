@@ -1,0 +1,17 @@
+<div class="banner">
+    <div class="content-container">
+        <div class="content">
+            <h5 class=" banner-title type-small-ttl"> Delivering</h5>
+            <h1 class="banner-title">Nature’s Best</h1>
+           <div class="wrapper ">
+              <h5 class=" text banner-title sub-bnr-ttl">Premium Quality</h5>
+              <h5 class="text banner-title sub-bnr-ttl sec-text">{{textContent}}</h5>
+           </div>
+       </div>
+    </div>
+
+    <div class="clouds">
+        <img class="cloud" *ngFor="let cloudImage of cloudImages; let i = index" [src]="cloudImage" alt="cloudImage" [style.--i]="i + 1">
+    </div>
+</div>
+

@@ -1,0 +1,48 @@
+@import '../../../../styles/variables';
+.contact-page-section {
+  .contact-container {
+    .main-contact {
+        padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title{
+            max-width: 620px;
+            margin-bottom: 50px;
+            .head1{
+                color: $color4;
+            }
+            .seb-head{
+                color:$type-brown;
+            }
+        }
+
+        .detail{
+            margin-bottom: 20px;
+            &:nth-last-of-type(1){
+                margin-bottom: 0;
+            }
+            h5{
+                color: $color4;
+            }
+
+            p{
+               
+                a{
+                    text-decoration: none;
+                    color: $type-brown;
+                    &:hover{
+                        padding-left: 10px;
+                        color: $color3;
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+}

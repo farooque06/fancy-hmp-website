@@ -1,0 +1,29 @@
+<div class="product-page-section">
+    <app-common-banner [title]="productpageTitle" [content]="productPageContent"></app-common-banner>
+    <div class="product-list-container  common-padding common-top-bottom-pd">
+        <div class="item-container has-no-bg" *ngFor="let category of categories">
+          <div class="title has-diff-color">
+            <h2>{{category.name}}</h2>
+            <!-- <div class="link"><a href="#">see more</a></div> -->
+            <button type="button" class="btn btn-outline-primary" (click)="updateList('all')">All</button>
+            <button type="button" class="btn btn-outline-primary" (click)="updateList('m')" >Male</button>
+            <button type="button" class="btn btn-outline-primary" (click)="updateList('f')">Female</button>
+          </div>
+          <div class="items">
+            <div class="item item-has-less-width" *ngFor="let item of category.items">
+              <div class="image">
+                <img *ngIf="item.image"
+                     [src]="'../../../../assets/images/' + category.name.toLowerCase() + '/' + item.image"
+                     alt>
+                <img *ngIf="!item.image"
+                     src="../../../../assets/images/product-7216106_640.png" alt>
+              </div>
+              <div class="content">
+                <h5 class="name">{{item.name}}</h5>
+                <p class="price">Rs.{{item.price}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

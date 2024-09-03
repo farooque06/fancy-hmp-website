@@ -1,0 +1,35 @@
+<div class="header-section ">
+    <nav class="nav-section common-padding">
+        <div class="logo">
+            <!-- <div class="image">
+                <img routerLink="home"
+                    src="../../../../assets/logo/logo.png" alt="logo">
+            </div> -->
+            <div class="text">
+                <h1 routerLink="home">Logo</h1>
+            </div>
+        </div>
+        <div class="nav">
+            <ul ngbNav #nav="ngbNav" class="menu">
+                <li routerLink="home">home</li>
+                <li ngbDropdown role="presentation">
+                    <span type="button" class="btn"
+                        ngbDropdownToggle>our Products</span>
+                    <div ngbDropdownMenu>
+                        <button ngbDropdownItem routerLink="products">Our
+                            Products</button>
+                        <button ngbDropdownItem>Vintage Aura</button>
+                        <button ngbDropdownItem>Timeless Essentials</button>
+                        <button ngbDropdownItem>Denim Classic</button>
+                        <div class="dropdown-divider"></div>
+                        <button ngbDropdownItem routerLink="world-of-hemp">World
+                            Of Hemp</button>
+                    </div>
+                </li>
+                <li>about us</li>
+                <li routerLink="contact-us">Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+</div>

@@ -1,0 +1,71 @@
+@import '../../../../styles/variables';
+.phone-frame {
+    position: relative;
+    border: 10px solid black;
+    border-radius: 40px;
+    width: 320px;
+    height: 600px;
+    position: relative;
+    box-shadow: 0px 20px 15px #33333335;
+    overflow: hidden;
+  
+    .phone {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .notouch {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: black;
+        width: 200px;
+        height: 28px;
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        .camera {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          border: 0.2rem solid #1e1f22;
+          background: #447bb5a6;
+        }
+  
+        .spkr {
+          width: 5.2rem;
+          height: 0.6rem;
+          background: #333333;
+          border-radius: 0.2rem;
+          margin-left: 25px;
+        }
+      }
+      .contact-pad{
+          position: absolute;
+          bottom: 10px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+          .number{
+              margin: auto;
+              text-align: center;
+          }
+          .call-btn{
+            position: absolute;
+            bottom: 14%;
+            left: 50%;
+            transform: translate(-50%,-14%);
+            width: 55px;
+            height: 55px;
+            background-color: $bg-layer;
+            border-radius: 50%;
+            background: transparent;
+            cursor: pointer;
+          }
+      }
+    }
+  }
+  

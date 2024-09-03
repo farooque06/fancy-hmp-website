@@ -1,0 +1,16 @@
+@import '../../../../styles/variables';
+.common-banner{
+    height: 50vh;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: $primary-color;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    // .common-title{
+    //     .sub-head{
+    //         color: #ffffff;
+    //     }
+    // }
+}

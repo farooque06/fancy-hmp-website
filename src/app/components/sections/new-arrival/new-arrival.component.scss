@@ -1,0 +1,77 @@
+@import "../../../../styles/variables";
+
+.new-arrival-section {
+  background-color: $primary-color;
+
+  .arrival-container {
+    position: relative;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      width: 90%;
+      height: 3px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 10px;
+      background: linear-gradient(
+        to right,
+        rgba(91, 201, 51, 0.767),
+        rgba(239, 200, 141, 0.747)
+      );
+    }
+    .arrival-product-slider {
+      padding: 40px 0;
+      .main-container {
+        display: flex;
+        justify-content: center;
+        .content {
+          margin: auto;
+          max-width: 500px;
+          .title {
+            color: $color2;
+            margin-bottom: 40px;
+          }
+          .cnt {
+            .p {
+              color: #d6cece;
+              margin-bottom: 30px;
+              &:nth-last-child(1) {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        .image {
+          max-width: 450px;
+          height: 400px;
+          margin: auto;
+          overflow: hidden;
+          float: left;
+          border: 7px solid $color1;
+          border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+          animation: morph 6s ease-in-out infinite 1s;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+    }
+    @keyframes morph {
+      0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+      100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+    }
+  }
+}

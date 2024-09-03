@@ -1,0 +1,17 @@
+<div class="why-hemp-section ">
+    <div class="why-container common-padding2 common-top-bottom-pd">
+        <div class="common-title ">
+            <h2 class="head1">Why hemp Products?</h2>
+        </div>
+        <div class="why">
+            <ul class="ul">
+                <li class="list" *ngFor="let benefit of hempBenefits">
+                    <h3 class="heading">{{ benefit.title }}</h3>
+                    <p class="cont">{{ benefit.content[0] }}</p>
+                    <p class="cont">{{ benefit.content[1] }}</p>
+                    <span class="circle"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
